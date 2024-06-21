@@ -734,3 +734,77 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 			#footer .menu li {
 				font-size: 0.9em;
 			}
+
+
+  #mygo {
+    visibility: hidden;
+  }
+
+
+/* 响应式布局 */
+@media screen and (max-width: 1000px) {
+  body{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #nav {
+		display: none;
+	}
+  body{
+    font-size: 16px;
+  }
+
+  #intro {
+    overflow: hidden;
+  }
+    #intro .content{
+      position: absolute;
+      top: 20%;
+      left: 2vw;
+    }
+
+  #one .content {
+    position: absolute;
+    left: 20vw;
+    top: 40vh;
+    width: 80vw;
+    padding: 1em;
+    padding-bottom: 3.5em;
+  }
+    #map {
+      top: -5vw;
+       left: -36vw;
+       width: 150vw;
+    }
+    .college .textbox {
+      font-size: 12px;
+      top: 5%;
+      width: 60vw;
+      left: 20vw;
+    }
+
+  #two .content {
+    position: absolute;
+    left: 0;
+    top: 40vh;
+    width: 80vw;
+    padding: 1em;
+    padding-bottom: 3.5em;
+  }
+
+  #work {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
