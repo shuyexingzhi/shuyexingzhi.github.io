@@ -1,0 +1,736 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+
+  body {
+    line-height: 1.2;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+    background: #fff;
+    height: 110%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18pt;
+    line-height: 1.6em;
+    color: #39454b;
+    letter-spacing: 0.5px;
+  }
+
+  h1, h2, h3, h4, h5, h6,  {
+    font-weight: 900;
+    color: inherit;
+  }
+
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    letter-spacing: -2px;
+    line-height: 1.25em;
+  }
+
+  strong {
+    font-weight: 900;
+    color: inherit;
+  }
+
+  a {
+    -moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    color: #98c593;
+  }
+
+  p, ul, ol, dl, table {
+    margin-bottom: 1em;
+  }
+
+  header {
+    margin-bottom: 1em;
+  }
+
+  header p {
+      display: block;
+      margin: 1em 0 0 0;
+      padding: 0 0 0.5em 0;
+  }
+
+  footer {
+    margin-top: 2em;
+  }
+
+
+/* Button */
+
+	.button,
+	button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		background-color: #98c593;
+		border: 0;
+		border-radius: 3.5em;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		height: 3.5em;
+		line-height: 3.5em;
+		outline: 0;
+		padding: 0 2em 0 2em;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+	}
+
+
+  	.button.down,
+  	button.down {
+  		width: 5em;
+  		height: 5em;
+  		line-height: 4.5em;
+  		padding: 0;
+  		background-image: url("images/dark-arrow.svg");
+  		background-position: center center;
+  		background-repeat: no-repeat;
+  		text-indent: -10em;
+  		overflow: hidden;
+  	}
+
+    	.button:active,
+    	button:active {
+    		background-color: #88b583;
+    	}
+
+    	.button.style2,
+    	button.style2 {
+    		background-color: transparent;
+    		border: solid 2px #e5e6e7;
+    		color: inherit;
+    	}
+
+    	.button.style2:hover,
+    	button.style2:hover {
+    		background-color: rgba(145, 146, 147, 0.035);
+    	}
+
+    	.button.style2.down,
+    	button.style2.down {
+    		background-image: url("images/arrow.svg");
+    	}
+
+  /* Box */
+
+  	.box {
+  		background: #fff;
+  		color: #39454b;
+  		padding: 2em;
+  	}
+
+  		.box.style2 {
+  			padding: 3.5em 2.5em 3.5em 2.5em;
+  		}
+
+    .dark {
+  		color: #fff;
+  	}
+
+  		.dark a {
+  			color: #fff;
+  		}
+
+  		.dark .button.style2 {
+  			border-color: inherit;
+  			background-color: rgba(64, 64, 64, 0.05);
+  		}
+
+  			.dark .button.style2:hover {
+  				background-color: rgba(255, 255, 255, 0.1);
+  			}
+
+  			.dark .button.style2.down {
+  				background-image: url("images/dark-arrow.svg");
+  			}
+
+  .main {
+		position: relative;
+		margin: 0;
+		overflow-x: hidden;
+	}
+
+		.main.fullscreen {
+			height: 100%;
+		}
+
+		.main.style1 {
+			text-align: center;
+			padding: 3em 0 3em 0;
+		}
+
+			.main.style1 h2 {
+				font-size: 4.25em;
+				line-height: 1em;
+				letter-spacing: -4px;
+			}
+
+			.main.style1:before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+
+			.main.style1 .content {
+				-moz-transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-ms-transition: all 1s ease;
+				transition: all 1s ease;
+				-moz-transform: translateZ(0);
+				-webkit-transform: translateZ(0);
+				-ms-transform: translateZ(0);
+				transform: translateZ(0);
+				opacity: 1.0;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.main.style1.inactive .content {
+				opacity: 0;
+			}
+
+		.main.style2 {
+			padding: 3em 0 3em 0;
+			overflow: hidden;
+		}
+
+			.main.style2 .content {
+				-moz-transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-ms-transition: all 1s ease;
+				transition: all 1s ease;
+				-moz-transform: translateZ(0);
+				-webkit-transform: translateZ(0);
+				-ms-transform: translateZ(0);
+				transform: translateZ(0);
+				position: relative;
+				width: 35%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.main.style2.left:after {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+
+			.main.style2.left .content {
+				left: 0;
+			}
+
+			.main.style2.right:before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+			}
+
+			.main.style2.right .content {
+				left: 65%;
+			}
+
+			.main.style2.inactive.left .content {
+				left: -35%;
+			}
+
+			.main.style2.inactive.right .content {
+				left: 100%;
+			}
+
+		.main.style3 {
+			text-align: center;
+			padding: 6em 0 6em 0;
+		}
+
+			.main.style3 .content > header {
+				margin-bottom: 2em;
+			}
+
+			.main.style3.primary {
+				background: #fff;
+			}
+
+			.main.style3.secondary {
+				background: #f5f6f7;
+			}
+
+  #header {
+		position: fixed;
+		z-index: 10000;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: #fff;
+		background: rgba(255, 255, 255, 0.95);
+		height: 3em;
+		line-height: 3em;
+		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+	}
+
+  body {
+		padding-top: 3em;
+	}
+
+  #logo {
+		position: relative;
+		left: 1em;
+		top: 0;
+		height: 3em;
+		line-height: 3em;
+		letter-spacing: -1px;
+    color: transparent;
+	}
+
+    #logo .logofortop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+    @font-face {
+    font-family: 'LogoFont';
+    src: url('font/logo2.ttf') format('truetype');
+    }
+    #logo2 {
+      position: absolute;
+      top: 1em;
+      left: 4.5em;
+      font-size: 1em;
+      font-family: 'LogoFont';
+    }
+
+  #nav {
+		position: absolute;
+		right: 0.5em;
+		top: 0;
+		height: 3em;
+		line-height: 3em;
+	}
+
+  #nav ul {
+    margin: 0;
+  }
+
+    #nav ul li {
+      display: inline-block;
+      margin-left: 0.5em;
+      font-size: 0.9em;
+    }
+
+      #nav ul li a {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        height: 3em;
+        line-height: 3em;
+        padding: 0 0.5em 0 0.5em;
+        outline: 0;
+      }
+
+      #nav ul li:hover {
+        color: rgba(85, 173, 155, 0.72);
+      }
+
+      #nav ul li.border-left {
+          border-left: 2px solid rgba(60,60,60,0.32);
+          padding-left: 10px;
+      }
+
+  /* Intro */
+
+  	#intro {
+  		background: url("images/overlay.png"), url("images/2.jpg");
+  		background-size: 256px 256px, cover;
+  		background-attachment: fixed, fixed;
+  		background-position: top left, bottom center;
+  		background-repeat: repeat, no-repeat;
+  	}
+      #intro h2{
+        font-size: 2.25em;
+      }
+
+  /* One */
+
+  	#one {
+  		background: url("images/overlay.png"), url("../../images/one.png");
+  		background-size: 256px 256px, cover;
+  		background-attachment: fixed, fixed;
+  		background-position: top left, center center;
+  	}
+      #one header {
+        font-size:0.75em;
+      }
+      #one .box {
+        padding-top: 1.5em;
+      }
+
+    #shutu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+      #shutu .shutu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      #shutu .yinghua{
+        background: url("images/校树图片/武大樱花.jpeg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .dinxiang{
+        background: url("images/校树图片/哈工大丁香.jpg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .shuishan{
+        background: url("images/校树图片/大连理工杉树.jpg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .hehua{
+        background: url("images/校树图片/复旦荷花.jpeg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .zijinghua{
+        background: url("images/校树图片/港中文紫荆花.jpg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .wutong{
+        background: url("images/校树图片/华中梧桐树.jpeg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .fenghuangmu{
+        background: url("images/校树图片/厦大凤凰木.jpeg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .yinxing{
+        background: url("images/校树图片/四川大学银杏.jpeg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .yulan{
+        background: url("images/校树图片/浙大玉兰树.jpg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .baiyang{
+        background: url("images/校树图片/中传白杨.jpg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .mumian{
+        background: url("images/校树图片/中山大学木棉树.jpg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+      #shutu .yujinxiang{
+        background: url("images/校树图片/重庆大学郁金香.jpg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(3px);
+      }
+
+
+    #map {
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 70vw;
+       height: 100vh;
+       padding: 3em 0 3em 0;
+    }
+      #map .chinamap_background {
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        left: 15vw;
+        top: 8vh;
+        width: 50vw;
+        height: 65vh;
+        pointer-events: none;
+      }
+
+      .chinamap {
+        cursor: pointer;
+        opacity: 0.76;
+      }
+        .chinamap#dongbei {
+          transform: translate(0px, -200px);
+        }
+        .chinamap#huabei {
+          transform: scale(1.34) translate(-395px, -168px);
+        }
+        .chinamap#huadong {
+          transform: scale(0.9) translate(-210px, 460px);
+        }
+        .chinamap#huanan {
+          transform: scale(1.1) translate(-429px, 742px);
+        }
+        .chinamap#huazhong {
+          transform: scale(0.64) translate(-463px, 759px);
+        }
+        .chinamap#xibei {
+          transform: scale(1.75) translate(-679px, -117px);
+        }
+        .chinamap#xinan {
+          transform: scale(1.482) translate(-713px, 191px);
+        }
+      .dialog-text {
+          transition: opacity 0.5s ease-in-out;
+          position: absolute;
+      }
+      .chinamap path{
+        fill: rgba(242, 217, 11, 0.48)
+      }
+
+      .chinamap.lighting path {
+        fill: rgba(167, 242, 11, 0.72);
+      }
+
+      .chinamap:hover path{
+        fill: rgba(220, 242, 11, 0.64);
+        transition: all 0.2s ease-in-out;
+      }
+
+      .hidden {
+          opacity: 0;
+          visibility: hidden;
+      }
+
+    .college_choose{
+      cursor: pointer;
+    }
+      .college_choose:hover {
+        color: rgba(85, 173, 155, 0.72);
+        font-size: 1.1em;
+        transition: all 0.5s ease-in-out;
+      }
+
+    .college{
+      position: absolute;
+      bottom: 0;
+      overflow: hidden;
+      width: 100vw;
+      height: 0;
+      transition: height 0.5s ease-in-out;
+      background-color: rgba(211,233,211,0.64);
+    }
+      .college.show {
+        height: 30vh;
+      }
+      .college .textbox {
+        position: absolute;
+        top: 10%;
+        width: 70vw;
+        left: 15vw;
+      }
+        .college .text-item{
+          display: none;
+        }
+        .college .text-item.active{
+          display: block;
+        }
+      .college .left-arrow{
+        position: absolute;
+        left: 2vw;
+        top: 25%;
+      }
+      .college .right-arrow{
+        position: absolute;
+        right: 4vw;
+        top: 25%;
+      }
+
+    .highmiji path {
+      fill: rgba(85, 173, 155, 0.72);
+      transition: all 0.3s ease-in-out;
+    }
+    .midmiji path {
+      fill: rgba(149, 210, 179, 0.64);
+      transition: all 0.4s ease-in-out;
+    }
+    .lowmiji path {
+      fill: rgba(216, 239, 211, 0.56);
+      transition: all 0.5s ease-in-out;
+    }
+  /* Two */
+
+
+    #two .button{
+      position: absolute;
+      bottom: 25vh;
+      left: 10vw;
+    }
+
+    #juanzeng {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+      #bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+  /* Work */
+
+
+
+/* Footer */
+
+	#footer {
+		position: relative;
+		height: 5em;
+		line-height: 5em;
+		margin: 0;
+		background: #39454b;
+		color: #999;
+		color: rgba(245, 245, 247, 0.96);
+		overflow: hidden;
+     background-color: rgba(162, 198, 163, 0.5);
+	}
+
+		#footer a {
+			color: #999;
+			color: rgba(185, 186, 187, 0.5);
+		}
+
+			#footer a:hover {
+				color: #bbb;
+				color: #b9babb;
+			}
+
+		#footer .actions {
+			position: absolute;
+			left: 1em;
+			top: 0.25em;
+			height: 5em;
+			line-height: 5em;
+			margin: 0;
+		}
+
+			#footer .actions li {
+				font-size: 1.25em;
+				margin: 0;
+			}
+
+				#footer .actions li a {
+					padding: 0.5em;
+				}
+
+		#footer .menu {
+			position: absolute;
+			right: 2em;
+			top: 0;
+			height: 5em;
+			line-height: 5em;
+			margin: 0;
+		}
+
+			#footer .menu li {
+				font-size: 0.9em;
+			}
