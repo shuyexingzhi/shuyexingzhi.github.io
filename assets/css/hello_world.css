@@ -676,6 +676,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         object-fit: cover;
       }
 
+    #icon_juanzeng {
+      position: absolute;
+      height: 10em;
+      width: 10em;
+    }
   /* Work */
 
 
@@ -758,7 +763,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 }
 @media screen and (max-width: 500px) {
-  #nav {
+  #nav .unshownav {
 		display: none;
 	}
   body{
