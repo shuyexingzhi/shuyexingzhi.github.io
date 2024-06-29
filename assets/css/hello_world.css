@@ -436,7 +436,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .yinghua2{
+        background: url("images/校树图片/武大.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .dinxiang{
         background: url("images/校树图片/哈工大丁香.jpg");
@@ -444,7 +452,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .dinxiang2{
+        background: url("images/校树图片/哈工大丁香2.jpg");
+        background-size: cover;
+    		background-attachment: fixed;
+    		background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .shuishan{
         background: url("images/校树图片/大连理工杉树.jpg");
@@ -452,7 +468,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .shuishan2{
+        background: url("images/校树图片/大连理工水杉2.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .hehua{
         background: url("images/校树图片/复旦荷花.jpeg");
@@ -460,7 +484,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .hehua2{
+        background: url("images/校树图片/复旦.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .zijinghua{
         background: url("images/校树图片/港中文紫荆花.jpg");
@@ -468,7 +500,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .zijinghua2{
+        background: url("images/校树图片/港大.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .wutong{
         background: url("images/校树图片/华中梧桐树.jpeg");
@@ -476,7 +516,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .wutong2{
+        background: url("images/校树图片/华中科技.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
+      }
+      #shutu .wutong3{
+        background: url("images/校树图片/西交.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .fenghuangmu{
         background: url("images/校树图片/厦大凤凰木.jpeg");
@@ -484,7 +540,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .fenghuangmu2{
+        background: url("images/校树图片/厦大.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .yinxing{
         background: url("images/校树图片/四川大学银杏.jpeg");
@@ -492,7 +556,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .yinxing2{
+        background: url("images/校树图片/北京大学.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
+      }
+      #shutu .yinxing3{
+        background: url("images/校树图片/川大.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .yulan{
         background: url("images/校树图片/浙大玉兰树.jpg");
@@ -500,7 +580,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .yulan2{
+        background: url("images/校树图片/浙大.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .baiyang{
         background: url("images/校树图片/中传白杨.jpg");
@@ -508,7 +596,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .baiyang2{
+        background: url("images/校树图片/中传.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .mumian{
         background: url("images/校树图片/中山大学木棉树.jpg");
@@ -516,7 +612,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .mumian2{
+        background: url("images/校树图片/鸭大.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
       #shutu .yujinxiang{
         background: url("images/校树图片/重庆大学郁金香.jpg");
@@ -524,7 +628,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     		background-attachment: fixed;
     		background-position: center center;
         opacity: 0;
-        filter: blur(3px);
+        filter: blur(1px);
+      }
+      #shutu .yujinxiang2{
+        background: url("images/校树图片/重庆大学.jpeg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        opacity: 0;
+        filter: blur(1px);
       }
 
 
@@ -609,7 +721,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       width: 100vw;
       height: 0;
       transition: height 0.5s ease-in-out;
-      background-color: rgba(211,233,211,0.64);
+      background-color: rgba(211,233,211,0.72);
     }
       .college.show {
         height: 30vh;
@@ -621,6 +733,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         left: 15vw;
       }
         .college .text-item{
+          color: rgba(30,30,30,0.72);
           display: none;
         }
         .college .text-item.active{
@@ -638,15 +751,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       }
 
     .highmiji path {
-      fill: rgba(85, 173, 155, 0.72);
+      fill: rgba(53, 128, 137, 0.8);
       transition: all 0.3s ease-in-out;
     }
     .midmiji path {
-      fill: rgba(149, 210, 179, 0.64);
+      fill: rgba(88, 163, 153, 0.72);
       transition: all 0.4s ease-in-out;
     }
     .lowmiji path {
-      fill: rgba(216, 239, 211, 0.56);
+      fill: rgba(168, 205, 159, 0.64);
       transition: all 0.5s ease-in-out;
     }
   /* Two */

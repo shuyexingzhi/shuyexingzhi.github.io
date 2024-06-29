@@ -393,7 +393,7 @@ pathElement.addEventListener('click', function() {
 
 
 /*树种区域可视化*/
-var classNamesToHide = ['wutong','shuishan','hehua','zijinghua','dinxiang','yinxing','fenghuangmu','yinghua','yulan','baiyang','mumian','yujinxiang'];
+var classNamesToHide = ['wutong','wutong2','shuishan','shuishan2','hehua','hehua2','zijinghua','zijinghua2','dinxiang','dinxiang2','yinxing','yinxing2','fenghuangmu','fenghuangmu2','yinghua','yinghua2','yulan','yulan2','baiyang','baiyang2','mumian','mumian2','yujinxiang','yujinxiang2','wutong3','yinxing3'];
 function hideElementsByClass(classNamesToHide) {
     classNamesToHide.forEach(function(className) {
         var elements = document.getElementsByClassName(className);
@@ -410,22 +410,57 @@ function hideElementsByClass(classNamesToHide) {
       });
     },300);
 }
+let intervalId;
+function clearIntervalFunction() {
+  if (intervalId) {
+    clearInterval(intervalId);
+    intervalId = null;
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('hagongda').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
 
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('dinxiang');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('dinxiang');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('dinxiang2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
+
+
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['北京市','天津市','河北省','山西省','辽宁省','黑龙江省','宁夏回族自治区','上海市','陕西省','甘肃省','青海省','山东省',];
@@ -454,18 +489,44 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('dalianligong').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('shuishan');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('shuishan');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('shuishan2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
+
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['北京市','天津市','上海市','重庆市','四川省'];
@@ -494,18 +555,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('zhongchuan').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('baiyang');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('baiyang');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('baiyang2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['北京市','天津市','内蒙古自治区','宁夏回族自治区','甘肃省','陕西省',' 新疆维吾尔自治区','西藏自治区'];
@@ -534,18 +620,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('beida').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('yinxing');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yinxing');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yinxing2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['北京市','山西省','陕西省','贵州省','广西壮族自治区','福建省','上海市','江苏省','山东省'];
@@ -574,18 +685,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('fudan').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('hehua');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('hehua');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('hehua2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['上海市','湖南省','浙江省','安徽省','福建省','江西省','山东省','四川省','贵州省','陕西省'];
@@ -614,18 +750,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('zheda').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('yulan');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yulan');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yulan2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['江苏省','浙江省','广西壮族自治区'];
@@ -654,18 +815,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('xiada').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('fenghuangmu');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('fenghuangmu');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('fenghuangmu2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['福建省','广东省','广西壮族自治区','海南省','云南省'];
@@ -694,18 +880,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('zhongshan').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('mumian');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('mumian');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('mumian2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['广西壮族自治区','福建省','海南省','贵州省','云南省'];
@@ -734,18 +945,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('gangda').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('zijinghua');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('zijinghua');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('zijinghua2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['福建省','江西省','广东省','广西壮族自治区','海南省','重庆市','四川省','贵州省','云南省'];
@@ -774,18 +1010,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('huake').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('wutong');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('wutong');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('wutong2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['上海市','湖北省','湖南省','广东省','广西壮族自治区'];
@@ -814,18 +1075,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('wuda').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('yinghua');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yinghua');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yinghua2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['北京市','天津市','河北省','山西省','浙江省','江西省','湖南省'];
@@ -854,18 +1140,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('xijiao').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('wutong');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('wutong');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('wutong3');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['上海市','湖北省','湖南省','广东省','广西壮族自治区'];
@@ -894,18 +1205,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('chongda').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('yujinxiang');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yujinxiang');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yujinxiang2');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['新疆维吾尔自治区','上海市','浙江省','山东省'];
@@ -934,18 +1270,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('chuanda').addEventListener('click', function(e) {
       var shutuElements = document.querySelectorAll('#shutu .shutu');
-      hideElementsByClass(classNamesToHide);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.classList.add('yinxing');
-        });
-      },500);
-      setTimeout(function(){
-        shutuElements.forEach(function(shutuElement) {
-          shutuElement.style.transition = 'opacity 0.5s ease-in-out';
-          shutuElement.style.opacity = '0.36';
-        });
-      },1000);
+      clearIntervalFunction();
+      function myFunction() {
+        hideElementsByClass(classNamesToHide);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yinxing');
+          });
+        },500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0';
+          });
+        },2500);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.classList.add('yinxing3');
+          });
+        },3000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.5s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },3000);
+      };
+      function startInterval() {
+        intervalId = setInterval(myFunction, 5000);
+      }
+      myFunction();
+      startInterval();
         removeMijiClassesByIds(province);
         removeLightingClasses();
         var highmijishow = ['北京市','山西省','陕西省','贵州省','广西壮族自治区','福建省','上海市','江苏省','山东省'];
