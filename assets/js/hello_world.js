@@ -408,7 +408,7 @@ function hideElementsByClass(classNamesToHide) {
             elements[i].classList.remove(className);
         }
       });
-    },300);
+    },500);
 }
 let intervalId;
 function clearIntervalFunction() {
@@ -429,33 +429,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('dinxiang');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('dinxiang2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -496,33 +496,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('shuishan');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('shuishan2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -562,33 +562,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('baiyang');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('baiyang2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -627,33 +627,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yinxing');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yinxing2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -692,33 +692,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('hehua');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('hehua2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -757,33 +757,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yulan');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yulan2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -822,33 +822,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('fenghuangmu');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('fenghuangmu2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -887,33 +887,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('mumian');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('mumian2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -952,33 +952,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('zijinghua');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('zijinghua2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -1017,33 +1017,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('wutong');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('wutong2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -1082,33 +1082,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yinghua');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yinghua2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -1147,33 +1147,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('wutong');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('wutong3');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -1212,33 +1212,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yujinxiang');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yujinxiang2');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
@@ -1277,33 +1277,33 @@ document.addEventListener('DOMContentLoaded', function() {
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yinxing');
           });
-        },400);
-        setTimeout(function(){
-          shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
-            shutuElement.style.opacity = '0.48';
-          });
         },800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
+            shutuElement.style.opacity = '0.48';
+          });
+        },1000);
+        setTimeout(function(){
+          shutuElements.forEach(function(shutuElement) {
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0';
           });
-        },2500);
+        },5000);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
             shutuElement.classList.add('yinxing3');
           });
-        },2800);
+        },5800);
         setTimeout(function(){
           shutuElements.forEach(function(shutuElement) {
-            shutuElement.style.transition = 'opacity 0.3s ease-in-out';
+            shutuElement.style.transition = 'opacity 0.8s ease-in-out';
             shutuElement.style.opacity = '0.48';
           });
-        },2800);
+        },5800);
       };
       function startInterval() {
-        intervalId = setInterval(myFunction, 5000);
+        intervalId = setInterval(myFunction, 10000);
       }
       myFunction();
       startInterval();
